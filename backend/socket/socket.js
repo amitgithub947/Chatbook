@@ -8,7 +8,7 @@ const server=http.createServer(app);
 const io=new Server(server,{
     cors:{
         // origin:"https://chat-on-adgw.onrender.com",
-        origin:"https://chatbook-theta.vercel.app/",
+        origin:"https://chatbook-theta.vercel.app",
         credentials:true
     }
 })
