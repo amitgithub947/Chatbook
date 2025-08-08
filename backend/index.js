@@ -14,7 +14,7 @@ const port=process.env.PORT;
 //const frontendurl = process.env.FRONTEND_URI;
 app.use(cors({
     // origin:"https://chat-on-adgw.onrender.com",
-    origin:"https://chatbook-theta.vercel.app/",
+    origin:"https://chatbook-theta.vercel.app",
     credentials:true
 })) 
 app.use(express.json()); 
