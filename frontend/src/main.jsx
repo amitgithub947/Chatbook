@@ -8,7 +8,7 @@ import {Provider} from "react-redux"
 import { store } from './redux/store.js'
 axios.defaults.withCredentials = true;
 // export const serverURL="https://chat-on-backend-j3cp.onrender.com"
-  export const serverURL = "https://chatbook-chak.onrender.com";
+  export const serverURL = import.meta.env.VITE_SERVER_URL;
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>

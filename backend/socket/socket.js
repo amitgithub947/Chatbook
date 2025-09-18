@@ -4,11 +4,10 @@ import { Server } from "socket.io"
 
 let app=express()
 const server=http.createServer(app);
-//const frontendurl = process.env.FRONTEND_URI;
+const frontendurl = process.env.FRONTEND_URI;
 const io=new Server(server,{
     cors:{
-        // origin:"https://chat-on-adgw.onrender.com",
-        origin:"https://chatbook-theta.vercel.app",
+        origin: frontendurl,
         credentials:true
     }
 })

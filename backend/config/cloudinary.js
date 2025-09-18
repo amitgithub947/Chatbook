@@ -24,9 +24,7 @@
 import { v2 as cloudinary } from "cloudinary";
 import stream from "stream";
 import dotenv from "dotenv";
-dotenv.config();
-
- console.log("API_KEY:", process.env.API_KEY); 
+dotenv.config(); 
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
   api_key: process.env.API_KEY,
